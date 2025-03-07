@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Soubhagya Kumar Badatya, a 2nd-year Computer Science student passionate about software development and problem-solving.">
+  <meta name="keywords" content="portfolio, computer science, engineering student, software development, Python, web development">
+  <meta name="author" content="Soubhagya Kumar Badatya">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./style_hidden.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div class="header-left">
+      <h1>Soubhagya Kumar Badatya</h1>
+      <p>2nd-Year Engineering Student | Computer Science</p>
+    </div>
+    <div class="header-right">
+      <img src="soubha.png" alt="Soubhagya Kumar Badatya">
+    </div>
+  </header>
+
+ 
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle">Dark Mode</button>
+  </nav>
+
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Soubhagya Kumar Badatya, a 2nd-year Computer Science student passionate about building innovative software solutions.
+      I specialize in Python, web development, and problem-solving. My goal is to contribute to the tech industry by creating
+      impactful solutions that solve real-world problems. When I'm not coding, I enjoy participating in hackathons and exploring
+      new technologies.
+    </p>
+  </section>
+
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Technical:</strong> Python, C, Java, HTML/CSS, Git</li>
+      <li><strong>Soft Skills:</strong> Teamwork, Communication, Problem-Solving</li>
+    </ul>
+  </section>
+
+ 
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Physics Review</h3>
+      <p>
+        Designed a physics-based system that helps students collect and review notes, improving study efficiency by 30%.
+      </p>
+      <p><strong>Tools:</strong> HTML, CSS, Django</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>
+        Created a responsive portfolio website using HTML, CSS, and JavaScript.
+      </p>
+      <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certification">
+      <p><strong>Learning to Artificial Intelligence</strong> – Edu-Versity</p>
+      <p><strong>Joy of Using Computing with Python</strong> – NPTEL</p>
+    </div>
+  </section>
+
+
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: soubhagyakumar2961@gmail.com</p>
+    <p>LinkedIn: <a href="https://in.linkedin.com/in/soubhagya-kumar-badatya-285960319" target="_blank">linkedin.com/in/soubhagyakumar</a></p>
+    <p>GitHub: <a href="https://github.com/Soubhagyakumar2961" target="_blank">github.com/soubhagyakumar</a></p>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Soubhagya. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  </script>
+</body>
+</html>
